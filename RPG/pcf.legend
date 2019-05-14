@@ -1,0 +1,142 @@
+##################################################################################################################################################################
+  ___       ________  ________   ________  ________	   ________  ________      ___      ___ ________  ___       ________  ________  ________  ________
+|\  \     |\   __  \|\   ___  \|\   ___ \|\   ____\	 |\   __  \|\  _____\    |\  \    /  /|\   __  \|\  \     |\   __  \|\   __  \|\   __  \|\   ___  \
+\ \  \    \ \  \|\  \ \  \\ \  \ \  \_|\ \ \  \___|_	\ \  \|\  \ \  \__/     \ \  \  /  / | \  \|\  \ \  \    \ \  \|\  \ \  \|\  \ \  \|\  \ \  \\ \  \
+ \ \  \    \ \   __  \ \  \\ \  \ \  \ \\ \ \_____  \	\ \  \\\  \ \   __\     \ \  \/  / / \ \   __  \ \  \    \ \  \\\  \ \   _  _\ \   __  \ \  \\ \  \
+  \ \  \____\ \  \ \  \ \  \\ \  \ \  \_\\ \|____|\  \	\ \  \\\  \ \  \_|      \ \    / /   \ \  \ \  \ \  \____\ \  \\\  \ \  \\  \\ \  \ \  \ \  \\ \  \
+   \ \_______\ \__\ \__\ \__\\ \__\ \_______\____\_\  \	\ \_______\ \__\	\ \__/ /     \ \__\ \__\ \_______\ \_______\ \__\\ _\\ \__\ \__\ \__\\ \__\
+    \|_______|\|__|\|__|\|__| \|__|\|_______|\_________\	\|_______|\|__|	 \|__|/       \|__|\|__|\|_______|\|_______|\|__|\|__|\|__|\|__|\|__| \|__|
+					    \|_________|
+##################################################################################################################################################################
+
+INTRODUCTION :
+En header de chaque .Pcf vous y retrouvez des informations à propos de celui-ci, plus détaillé pour chaque cas en particulier.
+##### MAP + MAP EDITOR #####
+
+UTILS :
+1 -Si vous souhaitez rendre un "tile" bloquant en jeu, vous utilisez la touche b et vous sélectionnez ce que vous souhaitez.
+  Si vous souhaitez rendre un "tile" non bloquant alors qu'il est bloquant, vous utilisez la touche "b" et vous sélectionnez ce tile bloquant.
+  PS: Si vous voulez sortir du mode "bloquant" vous pouvez utiliser la touche "e'".
+
+------------- Comment créer une map ? -------------
+
+1: Se rendre dans bonus/map_creator/
+2: Make
+3: Ouvrir le .pcf "TEST_ZONE" qui ce trouve dans pcf/map/ vérifier ceci :
+AREA=NAME... X=0 Y=0  si X && Y ne sont pas à zero veuillez les set à zero.
+
+4: ./map_editor {DEFAULT NAME : TEST_ZONE} 0 0
+5: créer la map que vous souhaitez
+6: Quitter et la map sera auto-save.
+
+------------- Comment modifier une map ? -------------
+
+1: Se rendre dans le .pcf du jeu, que vous avez envie de modifier, selectionné à partir de AREA= jusqu'a ça derniere ligne, soit avant la fin du fichier ou avant une autre ligne débutant par AREA=
+2: Se rendre dans bonus/map_creator/
+3: Make
+4: Ouvrir le .pcf "TEST_ZONE" qui ce trouve dans pcf/map/ ensuite remplacer votre map part ce qui ce trouve dans celui-ci (bien à partir du AREA=), ainsi set X && Y à 0, pour l'éditeur.
+5: ./map_editor {DEFAULT NAME : TEST_ZONE} 0 0
+6: Modifiez comme bon vous sembles
+7: Quitter et la map sera auto-save.
+
+------------- Comment ajouter une map dans le jeu ? -------------
+
+{APRES AVOIR CREER OU MODIFIER UNE MAP}
+1: Se rendre dans bonus/map_creator/
+2: Ouvrir le .pcf "TEST_ZONE" qui ce trouve dans pcf/map/ copier votre map à partir de AREA=
+3: sortir du .pcf et se rendre dans le dossier principale du jeu
+4: Ouvrir le .pcf qui est nécéssaire à un ajout ou une modification
+5: Ajouter en dessous de la fin d'une map.
+
+UTILS :
+- Vérifier que le nom de la map soit différent des autres.
+- Vérifier que ces coordonnées soient cohérentes (voir chapitre correspondant)
+
+------------- Comprendre l'affichage des maps ? -------------
+
+Une zone contient 9 maps allant de 0 à 2 en x et en y.
+
+0,0 / 1,0 / 2,0
+0,1 / 1,1 / 2,1
+0,2 / 1,2 / 2,2
+
+
+##### FONT #####
+
+
+------------- Comment ajouter une font au jeu ? -------------
+
+1: Download la font, la stocker dans fonts/
+2: Ouvrir le .pcf fonts
+3: Suivre les instructions du header.
+
+##### ITEMS #####
+
+
+------------- Comment ajouter un item au jeu ? -------------
+
+1: Download l'item, le stocker dans textures/items
+2: Ouvrir le .pcf items
+3: Suivre les instructions du header.
+
+##### MONSTER #####
+
+
+------------- Comment ajouter un monstre au jeu ? -------------
+
+1: Download le monstre(png), le stocker dans textures/characters/monsters/
+2: Ouvrir le .pcf monster
+3: Suivre les instructions du header.
+
+##### NPC(pnj) #####
+
+
+------------- Comment ajouter un pnj au jeu ? -------------
+
+1: Download le pnj(png), le stocker dans textures/characters/NPCs/
+2: Ouvrir le .pcf npc
+3: Suivre les instructions du header.
+
+##### SCENE #####
+
+
+------------- Comment ajouter une scene au jeu ? -------------
+
+1: Ouvrir le .pcf scene
+2: Suivre les instructions du header.
+
+##### SOUND #####
+
+
+------------- Comment ajouter un son au jeu ? -------------
+
+1: Download le sons(ogg), le stocker dans sounds/
+2: Ouvrir le .pcf sounds
+3: Suivre les instructions du header.
+
+##### TEXTURES #####
+
+
+------------- Comment ajouter une texture au jeu ? -------------
+
+1: Download la textures(png), la stocker dans textures/
+2: Ouvrir le .pcf textures
+3: Suivre les instructions du header.
+
+
+##### UTILS #####
+
+Les maps du jeux sont dans .pcf/map/
+
+
+
+##################################################################################################################################################################
+  ___       ________  ________   ________  ________	   ________  ________      ___      ___ ________  ___       ________  ________  ________  ________
+|\  \     |\   __  \|\   ___  \|\   ___ \|\   ____\	 |\   __  \|\  _____\    |\  \    /  /|\   __  \|\  \     |\   __  \|\   __  \|\   __  \|\   ___  \
+\ \  \    \ \  \|\  \ \  \\ \  \ \  \_|\ \ \  \___|_	\ \  \|\  \ \  \__/     \ \  \  /  / | \  \|\  \ \  \    \ \  \|\  \ \  \|\  \ \  \|\  \ \  \\ \  \
+ \ \  \    \ \   __  \ \  \\ \  \ \  \ \\ \ \_____  \	\ \  \\\  \ \   __\     \ \  \/  / / \ \   __  \ \  \    \ \  \\\  \ \   _  _\ \   __  \ \  \\ \  \
+  \ \  \____\ \  \ \  \ \  \\ \  \ \  \_\\ \|____|\  \	\ \  \\\  \ \  \_|      \ \    / /   \ \  \ \  \ \  \____\ \  \\\  \ \  \\  \\ \  \ \  \ \  \\ \  \
+   \ \_______\ \__\ \__\ \__\\ \__\ \_______\____\_\  \	\ \_______\ \__\	\ \__/ /     \ \__\ \__\ \_______\ \_______\ \__\\ _\\ \__\ \__\ \__\\ \__\
+    \|_______|\|__|\|__|\|__| \|__|\|_______|\_________\	\|_______|\|__|	 \|__|/       \|__|\|__|\|_______|\|_______|\|__|\|__|\|__|\|__|\|__| \|__|
+					    \|_________|
+##################################################################################################################################################################

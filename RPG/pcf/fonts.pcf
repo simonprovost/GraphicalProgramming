@@ -1,0 +1,11 @@
+### FILE : Initialisation des fonts de texts du jeu. ###
+//Format: INIT_CHAR + description (voir .h)
+//Format:	FONT=nom de la font + FILEPATH=chemin d'accès
+
+-FONTS
+FONT=LIFECRAFT FILEPATH=fonts/lifecraft.ttf
+FONT=ARCADE FILEPATH=fonts/arcade_classic.ttf
+FONT=RING FILEPATH=fonts/ring_bearer.ttf
+FONT=FRITZ FILEPATH=fonts/frizquad.ttf
+
+### END OF FILE ###

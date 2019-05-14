@@ -1,0 +1,22 @@
+### FILE : Initialisation des sons et des musiques du jeu ###
+//Format: INIT_CHAR + description (voir .h)
+//Format:	AUDIO=nom de l'audio + FILEPATH=chemin d'accès
+
+-SOUNDS
+	AUDIO=CURSOR_SOUND FILEPATH=sounds/cursor_sound.ogg
+	AUDIO=DIALOGUE_SOUND FILEPATH=sounds/dialogue_sound.ogg
+	AUDIO=SELECT_SOUND FILEPATH=sounds/select_sound.ogg
+	AUDIO=FOOTSTEP_SOUND FILEPATH=sounds/footstep_sound.ogg
+	AUDIO=LEVEL_UP_SOUND FILEPATH=sounds/level_up.ogg
+	AUDIO=NEW_QUEST FILEPATH=sounds/new_quest.ogg
+	AUDIO=SHOOT_SOUND FILEPATH=sounds/shoot_sound.ogg
+	AUDIO=BOOM_SOUND FILEPATH=sounds/explosion_sound.ogg
+
+-MUSIC
+	AUDIO=VICTORY FILEPATH=sounds/victory_music.ogg
+	AUDIO=HOMETOWN_MUSIC FILEPATH=sounds/hometown_music.ogg
+	AUDIO=INTRO_MUSIC FILEPATH=sounds/intro_music.ogg
+	AUDIO=BATTLE_MUSIC FILEPATH=sounds/battle_music.ogg
+	AUDIO=BOSS_BATTLE_MUSIC FILEPATH=sounds/boss_battle_music.ogg
+
+### END OF FILE ###

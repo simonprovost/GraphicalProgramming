@@ -1,0 +1,9 @@
+### FILE : Initialisation des maps du jeu. ###
+//Format: INIT_INDICATOR + description (voir .h)
+//Format:	ZONE=nom de la zone + FILEPATH=chemin d'accès + X=coord x + Y=coord y (voir .h pour x et y max)
+
+-ZONES
+	ZONE=TEST_ZONE FILEPATH=pcf/map/test_zone.pcf X=0 Y=0
+	ZONE=TEST_SAVE FILEPATH=pcf/map/test_save.pcf X=1 Y=0
+
+### END OF FILE ###

@@ -1,0 +1,13 @@
+### FILE : Initialisation des maps du jeu. ###
+//Format: INIT_CHAR + description (voir .h)
+//Format:	ZONE=nom de la zone + FILEPATH=chemin d'accès + X=coord x + Y=coord y (voir .h pour x et y max)
+
+-ZONES
+	ZONE=DESTINY_LAKE FILEPATH=pcf/map/destiny_lake.pcf X=3 Y=3
+	ZONE=MORIA FILEPATH=pcf/map/moria.pcf X=2 Y=4
+	ZONE=VILLAGE FILEPATH=pcf/map/village.pcf X=3 Y=4
+	ZONE=CURSED_FOREST FILEPATH=pcf/map/cursed_forest.pcf X=4 Y=4
+	ZONE=TAVERN FILEPATH=pcf/map/tavern.pcf X=0 Y=0
+	ZONE=INTERIOR FILEPATH=pcf/map/interior.pcf X=1 Y=0
+
+### END OF FILE ###

@@ -1,0 +1,37 @@
+########################################DEBUT###############################################
+
+CREATE A MAP -->
+/-------------------------------------ETAPE[1]------------------------------------------\
+Allez dans la fonctions --> /src/collider_enemy_player.c
+Ajouter à la variale (all->var->level) le nombre de level max à parcourir avant de gagner.
+
+[Exemple]
+void check_if_win(public_class_t *all)
+{
+	if (all->var->level == [YOUR_CHOICE])
+                exit (0);
+}
+/-------------------------------------ETAPE[2]------------------------------------------\
+Allez dans la fonction --> /src/top_collider.c
+Ajouter une nouvelle map comme ci-dessous :
+
+[Exemple]
+char *map(public_class_t *all)
+{
+        char *final = NULL;
+        char *name_new_map = [NAME NEW MAP];
+
+        all->var->level == [NUMERO DU LEVEL] ? final = [NAME NEW MAP] : 0;
+        return (final);
+}
+/-------------------------------------OBSTACLE------------------------------------------\
+Qu'est ce qu'un obstacles ?
+
+X ---> obstacles (laser)
+WARNING --> les écarté afin de pas ce retrouver trop étroit lors du RUN..
+
+########################################FIN###############################################
+
+//-------------------------------------COMMENT JOUER ?----------------------------------//
+
+Les flêches permettent de voler vers le haut ou vers le bas ainsi que de choisir PLAY or EXIT lors du menu d'entré.
