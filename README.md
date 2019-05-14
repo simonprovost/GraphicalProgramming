@@ -36,8 +36,19 @@ GraphicalProgramming Project From Epitech Computer Science School
       - as the player runs, a score, which will be displayed, will increase.
       - when the player dies or finishes the map, the score is displayed inside the window.
 
-- [RUNNER](./RUNNER): **Role Play Game**
+- [RPG](./RUNNER): **Role Play Game**
     - The basic rules for the my_hunter are as follows:
-      - the player is a hunter who shoots ducks.
-      - ducks must appear on the screen and move from one side to another.
-      - the player can click on them to shoot them.
+      - The player needs to have characteristics which you can find in the status menu.
+      - The player can fight enemies, statistics will impact the fights results.
+      - There must be NPC in your game.
+      - You need to implement at least one quest.
+      - The player must have an inventory which can contain a limited set of items.
+      - The player can earn experience by winning fights and accomplishing specific actions.
+      - With enough experience, the player can level up, upgrading its statistics.
+      
+    - To give the users the feeling that you’re delivering a complete product you need to polish as much as possible
+        your game.
+      - Having a pleasant user interface.
+      - Create a coherent universe (visual assets, audio assets, scenario, . . .)
+      - Create a funny game where the player has at least one goal.
+      - Create a game with a beginning and an end.
