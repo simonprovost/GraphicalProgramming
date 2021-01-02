@@ -6,7 +6,7 @@
 <br/>
 
 # Runner
-Duck Hunter old old game
+Runner Like Geometry Dash.
 
 ## [Runner](./): **C and Graphical Basis**
 
